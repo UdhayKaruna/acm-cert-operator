@@ -1,0 +1,9 @@
+apiVersion: certificates.ioof.com.au/v1alpha1
+kind: ACMCertificate
+metadata:
+  labels:
+    app.kubernetes.io/name: acm-cert-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: acmcertificate-sample
+spec:
+  secretName: example-tls
